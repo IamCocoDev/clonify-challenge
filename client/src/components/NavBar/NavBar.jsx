@@ -5,7 +5,7 @@ import circle from '../../circle.svg';
 
 function NavBar() {
 
-  const [showCircles, setShowCircles] = useState(true);
+  const [showCircles, setShowCircles] = useState(false);
 
   return (
     <nav className='NavBar'>
