@@ -1,0 +1,160 @@
+.NavBar{
+  display: flex;
+  height: 10vh;
+  max-height: 100%;
+  width: 100vw;
+  max-width: 100%;
+  background-color: rgb(247, 206, 213);
+}
+
+.NavBar .Left_Side{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: auto;
+}
+
+.NavBar .Left_Side .Logo{
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 25%;
+  height: auto;
+}
+
+.NavBar .Right_Side{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: auto;
+}
+
+.NavBar .Right_Side .Circle{
+  display: flex;
+  justify-content: center;
+}
+
+.NavBar .Right_Side .Display_Mobile{
+  display: none;
+}
+
+.NavBar .Right_Side .Circle img{
+  display: flex;
+  height: 5%;
+  width: 5%;
+  margin: 2%;
+}
+
+.NavBar .Right_Side #hidden{
+  display: flex;
+}
+
+.NavBar .Right_Side i{
+  display: none;
+}
+
+
+@media (max-width: 1023px) {
+  .NavBar .Left_Side .Logo{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 35%;
+    height: auto;
+  }
+
+  .NavBar .Right_Side .Circle img{
+    display: flex;
+    height: 10%;
+    width: 7%;
+    margin: 2%;
+  }
+
+  .NavBar .Right_Side i{
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .NavBar .Left_Side .Logo{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+    height: auto;
+  }
+
+  .NavBar .Right_Side .Circle img{
+    display: flex;
+    height: 7%;
+    width: 7%;
+    margin: 2%;
+  }
+
+  .NavBar .Right_Side i{
+    display: none;
+  }
+
+  .NavBar .Right_Side .Circle .Display_Always{
+    display: none;
+  }
+  
+}
+
+
+@media (max-width: 425px) {
+  .NavBar .Left_Side .Logo{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    height: auto;
+  }
+  
+  .NavBar .Right_Side .Circle{
+    display: none;
+  }
+
+  .NavBar .Right_Side .Circle img{
+    display: none;
+  }
+
+  .NavBar .Right_Side{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+  }
+
+  .NavBar .Right_Side .Display_Mobile{
+    display: flex;
+    width: 20%;
+    height: 50%;
+  }
+
+  .NavBar .Right_Side .Circle .Display_Responsive{
+    display: flex;
+    height: 50%;
+    width: 50%;
+    margin: 1rem;
+  }
+
+  .NavBar .Right_Side i{
+    display: flex;
+  }
+  
+  .NavBar .Right_Side #hidden{
+    position: absolute;
+    left: 0px;
+    top:80px;
+    height: 10vh;
+    width: 100%;
+    max-width: 100vw;
+    background-color: pink;
+  }
+  
+
+}
+

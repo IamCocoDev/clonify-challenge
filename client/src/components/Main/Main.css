@@ -1,0 +1,68 @@
+main{
+  display: flex;
+  margin: 1rem;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+main .Left_Side{
+  width: 45%;
+}
+
+main .Left_Side div{
+  display: flex;
+  background-color: gray;
+  margin: 1rem;
+  border-radius: 1rem;
+  color: white;
+  height: 20vh;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+main .Right_Side{
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-items: center;
+  margin: 3rem;
+}
+
+main .Right_Side div{
+  display: flex;
+  align-items: center;
+  background-color: gray;
+  border-radius: 0.1rem;
+  margin: 0.3rem;
+  color: white;
+  height: 16vh;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  main .Left_Side div{
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 425px) {
+
+  main {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .Right_Side{
+    display: flex;
+    width: 70%;
+  }
+
+  main .Left_Side{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
